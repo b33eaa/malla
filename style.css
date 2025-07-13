@@ -26,13 +26,15 @@ color: #7b1d26;
 .anio {
   min-width: 300px;
   background: #e6cbda;
-  border: 2px solid #c494b6;
+  border: 2px solid #e6cbda;
   border-radius: 8px;
   padding: 10px;
 }
 
 .anio h2 {
   text-align: center;
+color: #78244a;
+  font-family: 'Roboto', sans-serif;
 }
 
 .semestre {
@@ -43,6 +45,8 @@ color: #7b1d26;
   margin: 5px 0;
   font-size: 14px;
   text-align: center;
+ color: #78244a;
+  font-family: 'Roboto', sans-serif;
 }
 
 .ramo {
@@ -79,19 +83,19 @@ color: #5c1f36;
 .ramo.parcial {
   background: #d38393; /* amarillo suave */
   color: #7a2e3d;          /* letra negra */
-  border: 3px dashed #c27f8c; /* borde naranja */
+  border: 2px dashed #bd7583; /* borde naranja */
 opacity: 1;
 }
 
 .ramo.resaltado {
   background: #daa1a1;
-  color: #000;
+  color: #683030;
   opacity: 1;
 }
 
 .ramo.futuro {
   background: #daa1a1;  /* Azul clarito */
-  color: #000;
+  color: #683030;
   border: 2px dashed #ffe1e1; /* Borde azul */
 }
 
@@ -116,7 +120,7 @@ button {
 }
 
 button:hover {
-  background-color: #1976d2; /* Azul más oscuro al pasar el mouse */
+  background-color: #dab8cb; /* Azul más oscuro al pasar el mouse */
 }
 
 .boton-contenedor {
