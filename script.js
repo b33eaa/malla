@@ -99,13 +99,17 @@ function dibujarMalla() {
     titulo.textContent = `Año ${anio}`;
     columna.appendChild(titulo);
 
-    const semestres = (anio === 6) ? [1] : [1,2];
+    const semestres = (anio === 6) ? [1] : [1, 2];
 
-    semestres.forEach(semestre => {
-      const semestreDiv = document.createElement('div');
-      semestreDiv.classList.add('semestre');
-      const subtitulo = document.createElement('h3');
-      subtitulo.textContent = `Semestre ${semestre}`;
+semestres.forEach(semestre => {
+  const semestreReal = (anio - 1) * 2 + semestre; // 1,2,3,4,5,6...
+
+  const semestreDiv = document.createElement('div');
+  semestreDiv.classList.add('semestre');
+  
+  const subtitulo = document.createElement('h3');
+  subtitulo.textContent = `${semestreReal}.° Semestre`;
+
       semestreDiv.appendChild(subtitulo);
 
       const ramosEnSemestre = ramos.filter(r => r.anio === anio && r.semestre === semestre);
